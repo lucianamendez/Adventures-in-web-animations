@@ -230,3 +230,18 @@ h3 {
     visibility: visible;
     opacity: 1;
 }
+
+@keyframes swing{
+    from {
+      transform:rotate(30deg);
+    }
+    to{
+      transform:rotate(-30deg);
+    }
+  }
+
+.sweetlandia {
+    transform-origin: center center;
+    display:block;
+    animation:swing 2s ease-in-out infinite alternate;
+}
